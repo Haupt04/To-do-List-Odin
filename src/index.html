@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>To Do List</header>
+        <h1>List of Things to Do: </h1>
+        <ul id="list_tasks">
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <button id="openDialog">Create a Task</button>
+        <dialog id="dialog">
+            <h2>Enter Information</h2>
+                <label for="TaskName">Enter Task: <input id="TaskName" type="text" placeholder="Go Shopping" required></label>
+                <label for="Description">Description: <input id="Description" type="text" required></label>
+
+                <!-- Dropdown Menu - Privorty -->
+                 <label for="dropDownMenu"> Chose Privorty Level</label>
+                 <select name="PrivortyLevel" id="dropDownMenu" required>
+                    <option value="">--Select an option--</option>
+                    <option value="high">High</option>
+                    <option value="low">Low</option>
+                 </select>
+
+            <div class="modal-footer">
+                <button id="cancelDialog">Cancel</button>
+                <button id="submitDialog">Submit</button>
+            </div>  
+        </dialog>
+
+    </main>
+    
+</body>
+</html>
