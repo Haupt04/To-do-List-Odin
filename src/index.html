@@ -6,26 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <nav id="navbar">
-        <header>To Do List</header>
-        <h1>List of Things to Do: </h1>
-        <ul id="list_tasks">
-        </ul>
-    </nav>
+    <div id="page-container">
+        <header id="header">
+            <i class="fa-solid fa-list fa-3x"></i>
+            <h1>To Do List Website</h1>
+        </header>
+
+        <hr>
+        <div id="main-container">
+            <h2>Your Projects</h2>
+            <p id="list-projects">Example: Marvel Project</p>
+        </div>
+        <hr>
 
     <main id="main-doc">
         <button id="openDialog">Create a Task</button>
         <dialog id="dialog">
-            <h2>Enter Information</h2>
-                <label for="TaskName">Enter Task: <input id="TaskName" type="text" placeholder="Go Shopping" required></label>
-                <label for="Description">Description: <input id="Description" type="text" required></label>
+            <h2>Enter Task Information</h2>
+                <label for="TaskName">Enter Title of Task: <input id="TaskName" type="text" placeholder="Name of Task:Example Cleaning" required></label>
+                <label for="Description">Description of Task: <textarea id="Description" name='Description' rows="4" cols="50" required placeholder="Descript the details of the task"></textarea></label>
+                <label for="dueDate">Due Date: <input type="date" id="dueDate" name="dueDate"></label>
+                
 
                 <!-- Dropdown Menu - Privorty -->
-                 <label for="dropDownMenu"> Chose Privorty Level</label>
+                 <label for="dropDownMenu"> Chose Privorty Level:</label>
                  <select name="PrivortyLevel" id="dropDownMenu" required>
                     <option value="">--Select an option--</option>
-                    <option value="high">High</option>
-                    <option value="low">Low</option>
+                    <option value="High">High</option>
+                    <option value="Low">Low</option>
+                 
                  </select>
 
             <div class="modal-footer">
@@ -35,6 +44,6 @@
         </dialog>
 
     </main>
-    
+    </div>
 </body>
 </html>
