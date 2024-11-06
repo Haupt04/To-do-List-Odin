@@ -9,18 +9,25 @@
     <div id="page-container">
         <header id="header">
             <i class="fa-solid fa-list fa-3x"></i>
-            <h1>To Do List Website</h1>
+            <h1>To-Do List Projects</h1>
         </header>
 
         <hr>
-        <div id="main-container">
-            <h2>Your Projects</h2>
-            <p id="list-projects">Example: Marvel Project</p>
+        <!-- Project Management Section -->
+        <div id="project-management">
+            <label for="projectSelector">Select Project:</label>
+            <select id="projectSelector">
+                <option value="Default Project">Default Project</option>
+            </select>
+            <button id="newProjectButton">Create New Project</button>
+            <button id="deleteProjectButton">Delete Selected Project</button>
         </div>
         <hr>
+        <button id="openDialog">Create a Task</button>
+        <!-- Task List Display Section -->
+        <div id="list-projects"></div>
 
     <main id="main-doc">
-        <button id="openDialog">Create a Task</button>
         <dialog id="dialog">
             <h2>Enter Task Information</h2>
                 <label for="TaskName">Enter Title of Task: <input id="TaskName" type="text" placeholder="Name of Task:Example Cleaning" required></label>

@@ -5,12 +5,12 @@ export class ToDoList{
         this.title = title;
         this.description = description;
         this.priority = priority;
-        this.IsCompleted = false;
+        this.isCompleted = 'Incomplete';
         this.dueDate = dueDate;
     }
 
     markComplete(){
-        this.IsCompleted = !this.IsCompleted;
+        this.isCompleted = this.isCompleted === 'Incomplete' ? 'Complete' : 'Incomplete';
     }
     
     updatePriority(newPriority){
@@ -25,9 +25,11 @@ export class ToDoList{
         return {
             title: this.title,
             description: this.description,
-            isCompleted: this.IsCompleted,
+            isCompleted: this.isCompleted,
             priority: this.priority,
             dueDate: this.dueDate,
         }
     }
+
+    
 }
